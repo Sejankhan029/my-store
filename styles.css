@@ -1,0 +1,1035 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ramaraja', serif; /* Ramaraja for body text */
+    background-color: #1a1a1a; /* Dark background */
+    color: #333; /* Text color */
+}
+
+/* Header */
+.header {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style-type: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #00ccff; /* Bright blue */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #ffcc00; /* Bright yellow */
+}
+
+/* Banner */
+.banner {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('banner.jpg') center/cover;
+    color: #ffffff;
+    padding: 3rem;
+    text-align: center;
+}
+
+.banner h2 {
+    font-family: 'Ramaraja', serif; /* Ramaraja for banner heading */
+    font-size: 2.5rem;
+    color: #00ccff; /* Bright blue */
+}
+
+.banner p {
+    font-family: 'Ramaraja', serif; /* Ramaraja for banner paragraph */
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #ffcc00; /* Bright yellow */
+}
+
+/* Product Grid */
+.product-grid {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #2b2b2b;
+}
+
+.product {
+    background-color: #ffffff;
+    border: 2px solid #00ccff; /* Bright blue border */
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product h3 {
+    font-family: 'Ramaraja', serif; /* Changed to Ramaraja for product title */
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.product p {
+    font-family: 'Ramaraja', serif; /* Ramaraja for product description */
+    color: #27ae60; /* Bright green */
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.about-section {
+    padding: 2rem;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-family: 'Ramaraja', serif; /* Ramaraja for section title */
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.about-section p {
+    font-family: 'Ramaraja', serif; /* Ramaraja for section paragraph */
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 2rem;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.contact-section form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-section input, 
+.contact-section textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+.contact-section button {
+    background-color: #00ccff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.contact-section button:hover {
+    background-color: #27ae60; /* Bright green */
+}
+
+/* Modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.footer h3 {
+    font-family:'Bodoni Moda', serif; /* bodoni for footer heading */
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #00ccff; /* Bright blue */
+}
+
+.footer p {
+    font-family: 'Bodoni Moda', serif; /* Bodoni for footer paragraph */
+    margin: 0.3rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        width: 90%;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bodoni Moda', serif; /* Bodoni for body text */
+    background-color: #1a1a1a; /* Dark background */
+    color: #333;
+}
+
+/* Header */
+.header {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style-type: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #00ccff; /* Bright blue */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #ffcc00; /* Bright yellow */
+}
+
+/* Banner */
+.banner {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('banner.jpg') center/cover;
+    color: #ffffff;
+    padding: 3rem;
+    text-align: center;
+}
+
+.banner h2 {
+    font-family: 'Bodoni Moda', serif; /* bodoni for banner heading */
+    font-size: 2.5rem;
+    color: #00ccff; /* Bright blue */
+}
+
+.banner p {
+    font-family: 'Bodoni Moda', serif; /* Bodoni for banner paragraph */
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #ffcc00; /* Bright yellow */
+}
+
+/* Product Grid */
+.product-grid {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #2b2b2b;
+}
+
+.product {
+    background-color: #ffffff;
+    border: 2px solid #00ccff; /* Bright blue border */
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product h3 {
+    font-family: 'Bodoni Moda', serif; /* Bodoni for product title */
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.product p {
+    font-family: 'Bodoni Moda', serif; /* Bodoni for product description */
+    color: #27ae60; /* Bright green */
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.product button {
+    background-color: #00ccff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.product button:hover {
+    background-color: #27ae60; /* Bright green */
+}
+
+/* Image Gallery */
+.image-gallery {
+    display: flex;
+    justify-content: center; /* Center the images */
+    gap: 1rem; /* Space between images */
+    margin: 1rem 0; /* Space above and below the gallery */
+}
+
+.image-gallery img {
+    width: 100px; /* Width of each image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners */
+    transition: transform 0.3s; /* For hover effect */
+}
+
+.image-gallery img:hover {
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+/* About Section */
+.about-section {
+    padding: 2rem;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-family: 'Bodoni Moda', serif; /* bodoni for section title */
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.about-section p {
+    font-family: 'Bodoni Moda', serif; /* Bodoni for section paragraph */
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 2rem;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.contact-section form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-section input, 
+.contact-section textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+.contact-section button {
+    background-color: #00ccff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.contact-section button:hover {
+    background-color: #27ae60; /* Bright green */
+}
+
+/* Modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.footer h3 {
+    font-family: 'Bodoni Moda', serif; /* bodoni for footer heading */
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #00ccff; /* Bright blue */
+}
+
+.footer p {
+    font-family: 'Bodoni Moda', serif; /* Bodoni for footer paragraph */
+    margin: 0.3rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        width: 90%;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bodoni Moda', serif; /* Bodoni for body text */
+    background-color: #1a1a1a; /* Dark background */
+    color: #333;
+}
+
+/* Header */
+.header {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style-type: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #00ccff; /* Bright blue */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #ffcc00; /* Bright yellow */
+}
+
+/* Banner */
+.banner {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('banner.jpg') center/cover;
+    color: #ffffff;
+    padding: 3rem;
+    text-align: center;
+}
+
+.banner h2 {
+    font-family: 'Bodoni Moda', serif; /* bodoni for banner heading */
+    font-size: 2.5rem;
+    color: #00ccff; /* Bright blue */
+}
+
+.banner p {
+    font-family: 'Bodoni Moda', serif; /* Bodoni for banner paragraph */
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #ffcc00; /* Bright yellow */
+}
+
+/* Product Grid */
+.product-grid {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #2b2b2b;
+}
+
+.product {
+    background-color: #ffffff;
+    border: 2px solid #00ccff; /* Bright blue border */
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product h3 {
+    font-family: 'Bodoni Moda', serif; /* bodoni for product title */
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.product p {
+    font-family: 'Bodoni Moda', serif; /* Bodoni for product description */
+    color: #27ae60; /* Bright green */
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.btn {
+    background-color: #007bff; /* Button background color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding for the button */
+    text-decoration: none; /* Remove underline from link */
+    display: inline-block; /* Display as inline-block */
+    margin: 5px 0; /* Margin for spacing */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Image Gallery */
+.image-gallery {
+    display: flex;
+    justify-content: center; /* Center the images */
+    gap: 1rem; /* Space between images */
+    margin: 1rem 0; /* Space above and below the gallery */
+}
+
+.image-gallery img {
+    width: 100px; /* Width of each image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners */
+    transition: transform 0.3s; /* For hover effect */
+}
+
+.image-gallery img:hover {
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+/* About Section */
+.about-section {
+    padding: 2rem;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-family: 'Pacifico', cursive; /* Pacifico for section title */
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.about-section p {
+    font-family: 'Bodoni Moda', serif; /* Bodoni for section paragraph */
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 2rem;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.contact-section form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-section input, 
+.contact-section textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+.contact-section button {
+    background-color: #00ccff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.contact-section button:hover {
+    background-color: #27ae60; /* Bright green */
+}
+
+/* Modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.footer h3 {
+    font-family: 'Pacifico', cursive; /* Pacifico for footer heading */
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #00ccff; /* Bright blue */
+}
+
+.footer p {
+    font-family: 'Bodoni Moda', serif; /* Bodoni for footer paragraph */
+    margin: 0.3rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        width: 90%;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bodoni Moda', serif; /* Bodoni for body text */
+    background-color: #1a1a1a; /* Dark background */
+    color: #333;
+}
+
+/* Header */
+.header {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style-type: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #00ccff; /* Bright blue */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #ffcc00; /* Bright yellow */
+}
+
+/* Banner */
+.banner {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('banner.jpg') center/cover;
+    color: #ffffff;
+    padding: 3rem;
+    text-align: center;
+}
+
+.banner h2 {
+    font-family: 'Pacifico', cursive; /* Pacifico for banner heading */
+    font-size: 2.5rem;
+    color: #00ccff; /* Bright blue */
+}
+
+.banner p {
+    font-family: 'Bodoni Moda', serif; /* Bodoni for banner paragraph */
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #ffcc00; /* Bright yellow */
+}
+
+/* Product Grid */
+.product-grid {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #2b2b2b;
+}
+
+.product {
+    background-color: #ffffff;
+    border: 2px solid #00ccff; /* Bright blue border */
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product h3 {
+    font-family: 'Pacifico', cursive; /* Pacifico for product title */
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.product p {
+    font-family: 'Bodoni Moda', serif; /* Bodoni for product description */
+    color: #27ae60; /* Bright green */
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.product button {
+    background-color: #00ccff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.product button:hover {
+    background-color: #27ae60; /* Bright green */
+}
+
+/* Image Gallery */
+.image-gallery {
+    display: flex;
+    justify-content: center; /* Center the images */
+    gap: 1rem; /* Space between images */
+    margin: 1rem 0; /* Space above and below the gallery */
+}
+
+.image-gallery img {
+    width: 100px; /* Width of each image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners */
+    transition: transform 0.3s; /* For hover effect */
+}
+
+.image-gallery img:hover {
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+/* About Section */
+.about-section {
+    padding: 2rem;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-family: 'Pacifico', cursive; /* Pacifico for section title */
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.about-section p {
+    font-family: 'Bodoni Moda', serif; /* Bodoni for section paragraph */
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 2rem;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.contact-section form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-section input, 
+.contact-section textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+.contact-section button {
+    background-color: #00ccff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.contact-section button:hover {
+    background-color: #27ae60; /* Bright green */
+}
+
+/* Modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.footer h3 {
+    font-family: 'Pacifico', cursive; /* Pacifico for footer heading */
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #00ccff; /* Bright blue */
+}
+
+.footer p {
+    font-family: 'Bodoni Moda', serif; /* Bodoni for footer paragraph */
+    margin: 0.3rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        width: 90%;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
